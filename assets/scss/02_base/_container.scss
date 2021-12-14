@@ -15,9 +15,18 @@
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 35px;
+  grid-template-columns: 1fr;
   row-gap: 42px;
+
+  @media only screen and (min-width: 680px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 42px;
+  }
 
   .span-full {
     grid-column: 1 / -1;

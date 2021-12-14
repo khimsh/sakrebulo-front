@@ -2,8 +2,13 @@
   margin-top: 50px;
   margin-bottom: 37px;
   display: grid;
-  grid-template-columns: 536px 1fr;
-  column-gap: 16px;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+
+  @media only screen and (min-width: 1200px) {
+    grid-template-columns: 536px 1fr;
+    column-gap: 16px;
+  }
 
   &__about {
     position: relative;
@@ -18,11 +23,15 @@
     left: 25px;
   }
 
-  &__details {
-    padding: 40px 30px;
+  &__wrapper {
+    padding: 10px;
     background-color: #fff;
     border-radius: 20px;
-    overflow-y: hidden;
+  }
+
+  &__details {
+    padding: 40px 30px;
+    overflow-y: auto;
     min-height: 610px;
     max-height: 1146px;
 
@@ -36,7 +45,7 @@
 
     &::-webkit-scrollbar-thumb {
       background: #e3e3e3;
-      border-radius: 5px;
+      border-radius: 20px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
