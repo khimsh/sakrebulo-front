@@ -19,6 +19,8 @@
     display: flex;
     align-items: center;
     gap: 28px;
+    color: #fff;
+    font-family: 'BPG Mrgvlovani Caps 2010';
   }
 
   &__links {
@@ -27,6 +29,7 @@
     gap: 28px;
 
     a {
+      font-family: 'BPG Mrgvlovani Caps 2010';
       font-size: 16px;
       color: #ffd48f;
       text-decoration: none;
@@ -40,11 +43,13 @@
   }
 
   &__copy {
+    font-family: 'BPG Mrgvlovani 2010';
     font-size: 14px;
     color: hsl(0 0% 100% / 0.58);
   }
 
   &__created-by {
+    font-family: 'FiraGO';
     font-size: 14px;
     color: hsl(0 0% 100% / 0.58);
 

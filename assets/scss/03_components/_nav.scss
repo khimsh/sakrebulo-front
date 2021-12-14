@@ -59,13 +59,15 @@
     a {
       display: block;
       padding: 11px 20px;
+      font-family: 'BPG Mrgvlovani Caps 2010';
       font-size: 12px;
       color: #062135;
       text-decoration: none;
+      transition: background-color 0.1s ease-in-out;
 
       &:hover,
       &:active {
-        background: #ffd48f;
+        background-color: #ffd48f;
       }
     }
   }
