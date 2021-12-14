@@ -2,10 +2,16 @@
   padding-block: 40px;
   background-color: #09304a;
 
+  &__logo {
+    margin-bottom: 30px;
+  }
+
   &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @media only screen and (min-width: 1366px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__content {
@@ -25,8 +31,14 @@
 
   &__links {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 28px;
+
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 28px;
+    }
 
     a {
       font-family: 'BPG Mrgvlovani Caps 2010';
@@ -36,16 +48,39 @@
     }
   }
 
+  &__links-more {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+
   &__disclaimer {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
-    justify-content: space-between;
+
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__copy {
     font-family: 'BPG Mrgvlovani 2010';
     font-size: 14px;
     color: hsl(0 0% 100% / 0.58);
+    text-align: center;
+
+    @media only screen and (min-width: 1366px) {
+      text-align-last: left;
+    }
   }
 
   &__created-by {
@@ -56,6 +91,19 @@
     a {
       color: inherit;
       text-decoration: none;
+    }
+  }
+
+  &__nav {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+
+      @media only screen and (min-width: 1366px) {
+        flex-direction: row;
+        align-items: center;
+      }
     }
   }
 }

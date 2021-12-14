@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,20 @@
       <div class="container header__container">
         <a href="/" class="logo">საკრებულო</a>
 
-        <nav class="nav">
+        <nav class="nav nav--resp" data-nav>
+          <button class="nav-close" data-nav-close>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+            >
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </button>
+
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">პორტალის შესახებ</a>
@@ -63,6 +76,22 @@
             </li>
           </ul>
         </nav>
+
+        <button
+          class="nav-control"
+          aria-label="navigation control"
+          data-nav-open
+        >
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -84,8 +113,8 @@
         </div>
 
         <div class="footer__content">
-          <nav class="nav">
-            <ul class="nav__list">
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
               <li class="nav__item">
                 <a href="#" class="nav__link">პორტალის შესახებ</a>
               </li>
@@ -109,7 +138,7 @@
 
           <div class="divider"></div>
 
-          <div class="flex space-between align-center">
+          <div class="footer__links-more">
             <ul class="footer__social">
               <li>გამოგვყევი</li>
               <li>

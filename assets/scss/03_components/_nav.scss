@@ -1,8 +1,42 @@
 .nav {
+  position: fixed;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #09304a;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 100000;
+  transition: width 0.2s ease-in-out;
+  overflow: hidden;
+
+  &.active {
+    width: 300px;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    position: relative;
+    display: block;
+    width: unset;
+    height: unset;
+    background-color: transparent;
+    overflow: unset;
+  }
+
   &__list {
+    padding: 20px;
+    padding-top: 52px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 22px;
+
+    @media only screen and (min-width: 1366px) {
+      padding: unset;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__link {

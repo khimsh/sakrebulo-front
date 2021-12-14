@@ -5,6 +5,7 @@ const navDropdown = document.querySelector('[data-nav-dropdown]');
 
 navDropdownTrigger.addEventListener('click', () => {
   navDropdown.classList.toggle('active');
+  console.log('clicked');
 });
 
 const tabs = document.querySelectorAll('[data-tab-target]');
@@ -22,4 +23,16 @@ tabs.forEach((tab) => {
     tab.classList.add('active');
     target.classList.add('active');
   });
+});
+
+const openNav = document.querySelector('[data-nav-open]');
+const closeNav = document.querySelector('[data-nav-close]');
+const navigation = document.querySelector('[data-nav]');
+
+openNav.addEventListener('click', () => {
+  navigation.classList.add('active');
+});
+
+closeNav.addEventListener('click', () => {
+  navigation.classList.remove('active');
 });
