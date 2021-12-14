@@ -6,11 +6,42 @@
   gap: 15px;
 
   a {
+    font-family: 'Chromatica', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     color: #7b7b7b;
     text-decoration: none;
+    transition: color 0.1s ease-in-out;
 
     &.active {
       color: #062135;
+    }
+
+    &:hover,
+    &:focus {
+      color: hsl(203 68% 46%);
+    }
+
+    &.arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+      background-color: hsl(203 68% 46% / 0.58);
+      transition: background-color 0.1s ease-in-out;
+
+      &:hover {
+        background-color: hsl(203 68% 46%);
+      }
+    }
+
+    svg {
+      display: block;
+      width: 8.771px;
+      height: 7.619px;
+      fill: #fafafa;
     }
   }
 }

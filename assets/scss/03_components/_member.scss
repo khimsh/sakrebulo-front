@@ -274,18 +274,6 @@ p.comment-count {
       color: #000000;
     }
   }
-
-  &__time {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    time {
-      font-family: 'BPG ExtraSquare Mtavruli';
-      font-size: 13px;
-      color: #2688c5;
-    }
-  }
 }
 
 .leave-comment {

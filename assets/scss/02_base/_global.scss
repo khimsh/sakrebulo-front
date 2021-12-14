@@ -164,3 +164,23 @@ ul {
     }
   }
 }
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  svg {
+    display: block;
+    width: 16.008px;
+    height: 18.295px;
+    fill: #2688c5;
+  }
+
+  time {
+    transform: translateY(3px);
+    font-family: 'BPG ExtraSquare Mtavruli', sans-serif;
+    font-size: 13px;
+    color: #2688c5;
+  }
+}
