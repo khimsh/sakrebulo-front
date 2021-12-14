@@ -1,3 +1,5 @@
+@use './01_vendors/swiper-bundle.min';
+
 @use './02_base/fonts';
 @use './02_base/variables';
 @use './02_base/global';
@@ -13,4 +15,5 @@
 @use './03_components/cards';
 @use './03_components/contact';
 @use './03_components/article';
+@use './03_components/about';
 @use './03_components/pagination';

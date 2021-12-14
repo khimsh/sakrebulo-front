@@ -36,3 +36,17 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
   navigation.classList.remove('active');
 });
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 32,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
