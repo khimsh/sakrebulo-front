@@ -187,9 +187,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
 
-      button {
-        background: transparent;
-        border: none;
+      opacity: 1;
+      pointer-events: all;
+      background: transparent;
+      border: none;
+      transition: opacity 0.1s ease-in-out;
+
+      &.hidden {
+        opacity: 0;
+        pointer-events: none;
       }
     }
   }

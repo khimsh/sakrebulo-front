@@ -50,3 +50,27 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+if (document.querySelector('[data-video-player]')) {
+  const videoPlayer = document.querySelector('[data-video-player]');
+  const videoSrc = videoPlayer.querySelector('[data-video-source]');
+  const videoBtn = videoPlayer.querySelector('[data-video-btn]');
+
+  videoBtn.addEventListener('click', () => {
+    playVideo(videoSrc);
+    videoBtn.classList.add('hidden');
+  });
+
+  videoSrc.addEventListener('click', () => {
+    pauseVideo(videoSrc);
+    videoBtn.classList.remove('hidden');
+  });
+}
+
+function playVideo(video) {
+  video['play']();
+}
+
+function pauseVideo(video) {
+  video['pause']();
+}
