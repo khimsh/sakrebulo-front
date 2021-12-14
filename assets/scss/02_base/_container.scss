@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+
+  @media only screen and (min-width: 1200px) {
+    padding: 0 50px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    padding: unset;
+    margin: 0 auto;
+    width: 1364px;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 35px;
+  row-gap: 42px;
+
+  .span-full {
+    grid-column: 1 / -1;
+  }
+}

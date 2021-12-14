@@ -1,0 +1,52 @@
+.article {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+
+  figure {
+    border-bottom-right-radius: 15px;
+    overflow-y: hidden;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+
+    & > div {
+      padding-top: 50px;
+      padding-right: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    padding: 50px 70px 47px 70px;
+  }
+
+  &__heading {
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 40px;
+    font-weight: 400;
+    color: #09304a;
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    p {
+      font-family: 'BPG Mrgvlovani 2010';
+      font-size: 16px;
+      color: #6e6e6e;
+      line-height: 22px;
+    }
+  }
+
+  .btn-group {
+    margin-top: 60px;
+  }
+}

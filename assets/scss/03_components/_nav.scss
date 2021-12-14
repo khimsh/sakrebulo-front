@@ -1,0 +1,72 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  &__link {
+    position: relative;
+
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__dropdown {
+    margin-top: 14px;
+    width: 301px;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 1000000;
+  }
+
+  &__municipalities {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+
+    &.active {
+      max-height: 528px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #e3e3e3;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #cacaca;
+    }
+
+    a {
+      display: block;
+      padding: 11px 20px;
+      font-size: 12px;
+      color: #062135;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        background: #ffd48f;
+      }
+    }
+  }
+}

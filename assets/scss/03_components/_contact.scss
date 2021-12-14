@@ -1,0 +1,90 @@
+.contact {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 738px 1fr;
+    column-gap: 100px;
+  }
+
+  form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 34px;
+    row-gap: 28px;
+
+    .span-full {
+      grid-column: 1 / -1;
+    }
+
+    .share {
+      justify-self: end;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: 'BPG Mrgvlovani 2010';
+    font-size: 16px;
+    color: #062135;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    transition: all 0.1s ease-in-out;
+
+    &::placeholder {
+      font-family: 'BPG Mrgvlovani 2010';
+      font-size: 12px;
+      color: #9b9b9b;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #2688c5;
+    }
+  }
+
+  input {
+    height: 60px;
+  }
+
+  textarea {
+    height: 110px;
+  }
+
+  address {
+    font-style: normal;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    li,
+    p,
+    a {
+      font-family: 'BPG Mrgvlovani 2010';
+      font-size: 18px;
+      color: #4d4d4d;
+      text-decoration: none;
+    }
+
+    a {
+      transition: color 0.1s ease-in-out;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #2688c5;
+      }
+    }
+  }
+}

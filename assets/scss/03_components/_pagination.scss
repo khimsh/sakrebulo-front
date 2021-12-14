@@ -1,0 +1,16 @@
+.pagination {
+  padding: 46px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  a {
+    color: #7b7b7b;
+    text-decoration: none;
+
+    &.active {
+      color: #062135;
+    }
+  }
+}

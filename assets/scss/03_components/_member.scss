@@ -1,0 +1,459 @@
+.member {
+  margin-top: 50px;
+  margin-bottom: 37px;
+  display: grid;
+  grid-template-columns: 536px 1fr;
+  column-gap: 16px;
+
+  &__about {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    max-height: 600px;
+  }
+
+  &__party-logo {
+    position: absolute;
+    top: -30px;
+    left: 25px;
+  }
+
+  &__details {
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow-y: hidden;
+    min-height: 610px;
+    max-height: 1146px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #e3e3e3;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #cacaca;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      span {
+        font-family: 'BPG Mrgvlovani Caps 2010';
+        font-size: 16px;
+        color: #6e6e6e;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    li,
+    p,
+    a {
+      font-family: 'BPG Mrgvlovani 2010';
+      font-size: 14px;
+      color: #062135;
+      text-decoration: none;
+    }
+  }
+
+  &__bio {
+    padding: 20px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    column-gap: 16px;
+
+    h1 {
+      margin-bottom: 15px;
+      font-family: 'BPG Mrgvlovani Caps 2010';
+      font-size: 20px;
+      color: #ef9a11;
+    }
+
+    p {
+      font-family: 'BPG Mrgvlovani 2010';
+      font-size: 14px;
+      color: #9e9e9e;
+    }
+  }
+
+  &__party {
+    margin-bottom: 20px !important;
+    font-family: 'BPG Mrgvlovani 2010';
+    font-size: 16px !important;
+    color: #062135 !important;
+  }
+
+  &__photo {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__actions {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 120px 77px;
+
+    button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'BPG Mrgvlovani Caps 2010';
+      font-size: 14px;
+      color: #2688c5;
+      background-color: #fff;
+      box-shadow: inset 0 0 3px hsl(0 0% 0% /0.16);
+      border: none;
+
+      &.active {
+        color: #fff;
+        background: #2688c5;
+      }
+
+      &:last-child {
+        grid-column: 1 / -1;
+        background: #ef9a11;
+        gap: 30px;
+        color: #fff;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 20px;
+    font-weight: 400;
+    color: #2688c5;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    height: 372px;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .playBtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      button {
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+
+  .download-pdf {
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 16px;
+    color: #6e6e6e;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+
+    .block {
+      margin-left: 20px;
+    }
+  }
+
+  .status {
+    &--success {
+      color: #2688c5;
+    }
+
+    &--warning {
+      color: #ff0135;
+    }
+
+    &--info {
+      color: #ef9a11;
+    }
+  }
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.get-in-touch {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 14px;
+    color: #2688c5;
+    text-decoration: none;
+  }
+}
+
+p.comment-count {
+  font-family: 'BPG Mrgvlovani 2010';
+  font-size: 12px;
+  color: #2688c5;
+  padding-left: 40px;
+}
+
+.comments {
+  margin-top: 30px;
+  gap: 0 !important;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding-block: 33px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  &__text {
+    p {
+      font-size: 12px;
+      color: #000000;
+    }
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    time {
+      font-family: 'BPG ExtraSquare Mtavruli';
+      font-size: 13px;
+      color: #2688c5;
+    }
+  }
+}
+
+.leave-comment {
+  textarea {
+    width: 100%;
+    height: 122px;
+    font-family: 'BPG Banner QuadroSquare';
+    font-size: 16px;
+    color: #062135;
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #2688c5;
+    padding: 24px 30px;
+
+    &::placeholder {
+      font-family: 'BPG Banner QuadroSquare';
+      font-size: 12px;
+      color: #9b9b9b;
+    }
+
+    &:focus {
+      outline-color: #2688c5;
+    }
+  }
+}
+
+.comment-wrapper {
+  h3 {
+    margin-bottom: 8px;
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 16px;
+    font-weight: 400;
+    color: #6e6e6e;
+
+    span {
+      transform: translateY(4px);
+    }
+  }
+}
+
+.voting {
+  margin-top: -25px;
+  margin-bottom: 20px;
+
+  .bar {
+    width: 100%;
+    height: 28px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+
+    &__pos,
+    &__neg {
+      height: 100%;
+    }
+
+    &__pos {
+      width: 50%;
+      background-color: #ef9a11;
+    }
+
+    &__neg {
+      width: 50%;
+      background-color: #ff0135;
+    }
+  }
+
+  .percent-top,
+  .percent-bottom {
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 10px;
+    color: #062135;
+    text-align: right;
+  }
+
+  .percent-top {
+    margin-bottom: 12px;
+  }
+
+  .percent-bottom {
+    margin-top: 12px;
+  }
+
+  .bar-details {
+    display: flex;
+    gap: 20px;
+    margin-top: -10px;
+
+    & > div {
+      display: flex;
+      gap: 10px;
+    }
+
+    p {
+      font-family: 'BPG Mrgvlovani Caps 2010';
+      font-size: 14px;
+      color: #062135;
+    }
+  }
+}
+
+.block {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+
+  &--pos {
+    background-color: #ef9a11;
+  }
+
+  &--success {
+    background-color: #2688c5;
+  }
+
+  &--info {
+    background-color: #ef9a11;
+  }
+
+  &--neg {
+    background-color: #ff0135;
+  }
+}
+
+.income {
+  position: relative;
+
+  &__visual {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__bar {
+    position: relative;
+    flex-grow: 1;
+    height: 28px;
+    background: #2688c5;
+    border-radius: 3px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 3px;
+      height: 31px;
+      background: #ef9a11;
+    }
+  }
+
+  &__amount {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 14px;
+    color: #062135;
+  }
+
+  &__info {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+  }
+
+  p {
+    font-family: 'BPG Mrgvlovani Caps 2010';
+    font-size: 14px;
+    color: #062135;
+  }
+}
