@@ -120,20 +120,42 @@ ul {
 }
 
 .swiper {
-  padding-top: 63px !important;
+  padding-top: 40px !important;
   padding-bottom: 6px !important;
   margin-bottom: 40px;
 }
 
 .swiper-button-prev {
-  top: 13px !important;
+  top: 26px !important;
   left: unset !important;
-  right: 50px !important;
+  right: 40px !important;
 }
 
 .swiper-button-next {
-  top: 13px !important;
+  top: 26px !important;
   right: 0 !important;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: hsl(203 68% 46% / 0.58);
+  transition: background-color 0.1s ease-in-out;
+
+  &:hover {
+    background-color: hsl(203 68% 46%);
+  }
+
+  svg {
+    display: block;
+    width: 8.771px;
+    height: 7.619px;
+    fill: #fafafa;
+  }
 }
 
 .page-title-secondary {
