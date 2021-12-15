@@ -182,7 +182,15 @@
   &__video {
     position: relative;
     width: 100%;
-    height: 372px;
+    height: 300px;
+
+    @media only screen and (min-width: 1200px) {
+      height: 372px;
+    }
+
+    .video-wrapper {
+      height: 100%;
+    }
 
     video {
       width: 100%;
@@ -374,8 +382,13 @@ p.comment-count {
 
   .bar-details {
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-top: -10px;
+
+    @media only screen and (min-width: 720px) {
+      flex-direction: row;
+    }
 
     & > div {
       display: flex;
