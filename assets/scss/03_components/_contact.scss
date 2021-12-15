@@ -1,23 +1,44 @@
 .contact {
   &__wrapper {
     display: grid;
-    grid-template-columns: 738px 1fr;
-    column-gap: 100px;
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+
+    @media only screen and (min-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      grid-template-columns: 580px 1fr;
+      column-gap: 50px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+      grid-template-columns: 738px 1fr;
+      column-gap: 100px;
+    }
   }
 
   form {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 34px;
     row-gap: 28px;
 
-    .span-full {
-      grid-column: 1 / -1;
+    @media only screen and (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+
+      .span-full {
+        grid-column: 1 / -1;
+      }
     }
 
     .share {
-      justify-self: end;
+      @media only screen and (min-width: 1200px) {
+        justify-self: end;
+      }
     }
   }
 
