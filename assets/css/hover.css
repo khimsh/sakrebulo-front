@@ -1,0 +1,20 @@
+[data-nav-dropdown-trigger]:hover .nav__municipalities,
+[data-nav-dropdown-trigger]:focus-within .nav__municipalities {
+    max-height: 1000px;
+}
+
+.nav__dropdown {
+    margin-top: 0;
+    padding-top: 14px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav__municipalities {
+    background: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.nav__link:focus {
+    outline: 1px solid #fff;
+}
